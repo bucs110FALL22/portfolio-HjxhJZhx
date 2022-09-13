@@ -1,0 +1,55 @@
+import turtle
+  
+t = turtle.Turtle()
+ 
+s = int(input("Enter the length of the side of the Square: "))
+
+t.color ("purple")
+t.forward(s) 
+t.left(90) 
+t.forward(s) 
+t.left(90) 
+t.forward(s) 
+t.left(90) 
+t.forward(s) 
+t.left(90)
+
+t.color("red")
+t = turtle.Turtle()     
+t.hideturtle()          
+t.penup()                
+t.goto(30,-30 )       
+t.showturtle()          
+t.pendown()              
+  
+
+t.forward(s) 
+t.left(90) 
+t.forward(s) 
+t.left(90) 
+t.forward(s) 
+t.left(90) 
+t.forward(s) 
+t.left(90)
+
+
+
+
+# part 2 
+import turtle
+my_turtle=turtle.Turtle
+my_screen=turtle.screen_
+my_turtle, color("red")
+my_turtle, shape("turtle")
+
+sides=int(input"number of sides")
+length=int(input"length")
+angel=360/sides
+
+for num [angel]*sides:
+  my_turtle.forward(lenth)
+  my_turtle.left(num)
+window = turtle.screen()
+
+window.bgcolor("pink")
+window.exitobclick()
