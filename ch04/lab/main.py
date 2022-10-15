@@ -97,8 +97,7 @@ while True:
   for event in pygame.event.get():
       if event.type == pygame.QUIT:
           pygame.quit()     
-print (Player1)
-print (Player2)  
+
         
   
   
