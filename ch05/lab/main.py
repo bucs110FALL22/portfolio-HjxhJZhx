@@ -57,6 +57,6 @@ while running:
     if event.type == pygame.QUIT:
       pygame.quit()
       running = False
-pygame.time.wait(500)
+
 
   
