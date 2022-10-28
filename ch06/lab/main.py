@@ -1,6 +1,7 @@
 import turtle 
 
 t = turtle 
+
 t.setup(800,400,200,200)
 t.pensize(10)
 t.pencolor("black")
@@ -146,11 +147,14 @@ t.right(15)
 t.fd(17)
 t.end_fill()
 
+  
 t.penup()
 t.goto(-300,-150)
 t.pensize(5)
 t.pendown()
-t.write("pleas give me a hundred on the midterm",font=("Courier",20,"bold"))
+def drawFace(t):
+  print("plase give me a hundred on the midterm.")
+  drawFace(t)
 
 t.penup()
 t.goto(-60,-70)
