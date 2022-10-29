@@ -18,12 +18,12 @@ For each one below you should have a basic description of a program idea, a coup
 
 ## Project Idea 1
 
-< add your idea here >
+< smash bros game >
 
 ## Project Idea 2
 
-< add your idea here >
+< tour of state >
 
 ## Project Idea 3
 
-< add your idea here >
+<smash bros  >

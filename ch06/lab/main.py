@@ -155,7 +155,7 @@ t.pendown()
 def drawFace(t):
   print("plase give me a hundred on the midterm.")
   drawFace(t)
-
+t.write("pleas give me a hundred on the midterm",font=("Courier",20,"bold"))
 t.penup()
 t.goto(-60,-70)
 t.pencolor("green")
