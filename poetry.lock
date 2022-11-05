@@ -1,4 +1,39 @@
 [[package]]
+name = "cffi"
+version = "1.15.1"
+description = "Foreign Function Interface for Python calling C code."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+pycparser = "*"
+
+[[package]]
+name = "numpy"
+version = "1.23.4"
+description = "NumPy is the fundamental package for array computing with Python."
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
+name = "progressbar"
+version = "2.5"
+description = "Text progress bar library for Python."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "pycparser"
+version = "2.21"
+description = "C parser in Python"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[[package]]
 name = "pygame"
 version = "2.1.2"
 description = "Python Game Development"
@@ -6,10 +41,52 @@ category = "main"
 optional = false
 python-versions = ">=3.6"
 
+[[package]]
+name = "sound-machine"
+version = "1.0"
+description = "Sound and music synthesis library in pure python"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+numpy = "*"
+progressbar = "*"
+sounddevice = "*"
+
+[[package]]
+name = "sounddevice"
+version = "0.4.5"
+description = "Play and Record Sound with Python"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+CFFI = ">=1.0"
+
+[package.extras]
+numpy = ["numpy"]
+
+[[package]]
+name = "ui"
+version = "0.1.4"
+description = "Simple menu-driven user interface for the terminal"
+category = "main"
+optional = false
+python-versions = "*"
+
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "ceabba9b684e4f2ab71d2d4da4968eba8c229599e1fa639f3b9b53711f3f4243"
+content-hash = "fef1c85079a6202062f9735e06c73e008fe9391047f787a2ef61f113a60b9351"
 
 [metadata.files]
+cffi = []
+numpy = []
+progressbar = []
+pycparser = []
 pygame = []
+sound-machine = []
+sounddevice = []
+ui = []

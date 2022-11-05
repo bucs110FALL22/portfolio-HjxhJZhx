@@ -1,59 +1,54 @@
-import turtle #1. import modules
-import random
+import sys,pygame
+import random 
 
-#Part A
-window = turtle.Screen() # 2.  Create a screen
-window.bgcolor('lightblue')
-x = random.randrange(1,10)
-print(x)
-michelangelo = turtle.Turtle() # 3.  Create two turtles
-leonardo = turtle.Turtle()
-michelangelo.color('orange')
-leonardo.color('blue')
-michelangelo.shape('turtle')
-leonardo.shape('turtle')
-
-michelangelo.up() # 4. Pick up the pen so we don’t get lines
-leonardo.up()
-michelangelo.goto(-100,20)
-leonardo.goto(-100,-20)
-
-## 5. Your PART A code goes here
-x=1
-loop while x<11
-x=x+1
-result = random.randrange(1,100)
-print(result)
-michelangelo.forward(result)
-number = random.randrange(1,100)
-leonardo.froward(result)
-michelangelo.up() 
-leonardo.up()
-michelangelo.goto(-100,20)
-leonardo.goto(-100,-20)
-# PART B - complete part B here
 pygame.init()
-window = pygame.display.set_mode
-import pygame
-import math 
-import turtle 
-for i in range(3)
-  turtle.seth(i*120)
-  turtle.fd(100)
-turtle.done()
-for i in range(0,rows):
-  for k in range(0,rows):
-    print"x",
-    k += 1
-  i +=1
-print "/n"
-turtle.done() 
+size = width,height = 600,480
 
-n = 8
-x = (n-2)*180/n
-turtle.speed(1)
-turtle.pensize(2)
-for_in range (n)
-turtle.forward(100)
-turtle.done
-window.exitonclick()
+screen = pygame.display.set_mode(size)
+pygame.display.set_caption("matching game")
+
+def checkfor_keypress():
+  if len(pygame.event.get(QUIT)) > 0:
+    pygame.quit()
+    sys.exit()
+
+    keyUpEvents = pygame.event.get(KEYUP)
+    if len(keyUpEvents) ==0:
+      return None
+    elif keyUpEvents[0] ==K_ESCAPE:
+      pygame.quit()
+      sys.exit()
+  else:
+    return keyUpEvents[0].key
+
+def showstartscreen():
+  font=pygame.font.Font("anna.ttf",100)
+  start_text=font.render("Matching game",True,(255,0,0))
+  text_width,text_height=start_text.get_size()
+  while True:
+    screen.fill((124,205,124))
+    screen.blit(start_text,((width-text_width)/2,(height-text_height)/2))
+    if checkfor_keypress():
+        pygame.event.get()
+        return
+
+
+
+def draw_press_key_msg():
+    basicfont=pygame.font.Font("anna.ttf",30)
+    pressKeySurf = basicfont.render('Press a key to play.', True,(40,40,40))
+    presstext_width,presstext_height = pressKeySurf.get_size()
+    screen.blit(pressKeySurf,(width-presstext_width)/2,(height-presstext_height)/2+150))
+def showstartscreen():
+    font=pygame.font.Font("anna.ttf,100")
+    start_text=font.render("matching game",True,(255,0,0))
+    text_width,text_height=start_text.get_size()
+    while True:
+        screen.fill((124,205,124))
+        screen.blit((start_text,(width-text_width)/2,height-text_height/2))
+        draw_press_key_msg()
+        if checkfor_keypress():
+          pygame.event.get()
+          return
+
+        pygame.display.update()

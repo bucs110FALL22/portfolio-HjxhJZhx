@@ -23,12 +23,37 @@ Come up with interfaces fot 3 possible classes you think you may need. Again, br
 
 ## Class Interface 1
 
-< add your interface >
+<>
 
 ## Class Interface 2
 
-< add your interface >
+< class Point:
+	def __init__(self,x=1, y=0,color="yellow"):
+		self.x = x
+		self.y = y 
+		if color == "red":
+			print("you are wrong")
+			color = "pink"
+			self.color = color
+			
+			p1 = Point()
+			print(p1.x,p1.y, p1.color, type(p1))
+			p2 = Point(x=5, y=2,color="pink")
+			print(p2.x, p2.y, p2.color, type(p2)) >
 
 ## Class Interface 3
 
-< add your interface >
+< class Point(object):
+  def__init__(self,x,y)
+  self.X = x
+  self.Y = y
+
+  def move(self, dx,dy):
+    self.X = self.X + dx
+    self.Y = self.Y + dy
+def test point(x=0,y=0):
+p1 = point(x,y)
+print p1
+p2 = Point(x,0)
+print p2
+  
