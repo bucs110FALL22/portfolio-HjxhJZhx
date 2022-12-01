@@ -4,7 +4,7 @@ pygame.init()
 
 ck = pygame.display.set_mode((800,600)) 
 
-pygame.display.set_caption("match game") 
+pygame.display.set_caption("matching game") 
 
 clock = pygame.time.Clock() 
 
