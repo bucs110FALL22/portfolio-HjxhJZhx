@@ -73,7 +73,7 @@ def draw(self,pos):
         self.color = (0,0,0)
         self.size = 1 
         self.drawing = False
-    def.drawing = False
+    def drawing = False
     def start_draw(self):
       self.drawing = True
     def end_draw(self):
@@ -82,7 +82,7 @@ def draw(self,pos):
       self.drawing = False
     def draw(self,pos):
       if self.drawing:
-                pygame.draw.circle(self.screen,self.color,pos,self.size)
+        pygame.draw.circle(self.screen,self.color,pos,self.size)
 class Painter():
   def__init__(self):
   self.screen = pygame.display.set_mode((800,600))
@@ -186,14 +186,14 @@ for event in pygame.event.get():
   if event.type == QUIT:
     return
   elif event.type == KEYDOWN:
-# press esc to clear screen
+
   if event.key == K_ESCAPE:
       self.screen.fill((255, 255, 255))
   elif event.type == MOUSEBUTTONDOWN:
-# <= 74, coarse judge here can save much time
+
   if ((event.pos)[0] <= 74 and
 self.menu.click_button(event.pos)):
-# if not click on a functional button, do drawing
+
   pass
   else:
     self.brush.start_draw(event.pos)
